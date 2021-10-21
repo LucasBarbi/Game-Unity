@@ -27,6 +27,8 @@ public class personagemMov : MonoBehaviour
     void Update()
     {
         estaNoChao = Physics2D.OverlapCircle(posicaoDoPe.position, 0.3f, chao);
+        animator.SetBool("EstaNoChao", estaNoChao);
+        animator.SetFloat("velocidadeY", corpoPersonagem.velocity.y);
 
 
         direcao = Input.GetAxisRaw("Horizontal");
