@@ -41,6 +41,7 @@ public class Pausar : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
     }
 
 }
