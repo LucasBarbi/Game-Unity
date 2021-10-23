@@ -20,6 +20,8 @@ TagManager:
   - dunuts
   - Win
   - Placa
+  - checkpoint1
+  - checkpoint2
   layers:
   - Default
   - TransparentFX

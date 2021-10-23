@@ -13,6 +13,8 @@ public class placas : MonoBehaviour
         if (col.CompareTag("Placa") == true)
         {
             placa.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         
     }
@@ -20,15 +22,18 @@ public class placas : MonoBehaviour
     public void ResumeGame()
     {
         placa.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            placa.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        placa.SetActive(false);
-    }
-
     // Update is called once per frame
     void Update()
     {
