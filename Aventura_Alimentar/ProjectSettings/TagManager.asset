@@ -22,6 +22,8 @@ TagManager:
   - Placa
   - checkpoint1
   - checkpoint2
+  - Placa2
+  - Placa3
   layers:
   - Default
   - TransparentFX
