@@ -3,7 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - fim
+  - Alimento
+  - AlimentoRuim
+  - banana
+  - maca
+  - abacate
+  - laranja
+  - coco
+  - brocolis
+  - morango
+  - donuts
+  - doce
+  - bacon
+  - dunuts
+  - Win
+  - Placa
+  - checkpoint1
+  - checkpoint2
+  - Placa2
+  - Placa3
   layers:
   - Default
   - TransparentFX
