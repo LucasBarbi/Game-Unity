@@ -653,8 +653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 375, y: -248}
-  m_SizeDelta: {x: 592.04, y: 207.094}
+  m_AnchoredPosition: {x: 391, y: -240}
+  m_SizeDelta: {x: 448.2165, y: 161.9728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978935019
 MonoBehaviour:
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f747f95914d32484a9105b80946d7596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: 
+  nomeDaCena: Menu_
 --- !u!114 &978935020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 978935019}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Sair
+        m_MethodName: ChangeS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac6f90a0255aa1e429b2c341cedcafd6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c053ec3076c4a4a449c803e41d508440, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
