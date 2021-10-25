@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Pausar : MonoBehaviour
 {
-    private bool isPaused;
-    public GameObject pausePainel;
-    public string cena;
 
+    public Transform pauseMenu;
 
     private void Start()
     {
@@ -19,29 +17,30 @@ public class Pausar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseScreen();
+            if (pauseMenu.gameObject.activeSelf)
+            {
+                pauseMenu.gameObject.SetActive(false);
+                Time.timeScale = 1f;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                pauseMenu.gameObject.SetActive(true);
+                Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
         }
     }
 
-    void PauseScreen()
-    {
-        if (isPaused)
-        {
-            isPaused = false;
-            Time.timeScale = 1f;
-            pausePainel.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-        else
-        {
-            isPaused = true;
-            Time.timeScale = 0f;
-            pausePainel.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
 
+    public void ResumeGame()
+    {
+        pauseMenu.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 }

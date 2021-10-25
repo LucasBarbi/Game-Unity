@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f747f95914d32484a9105b80946d7596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: "Cr\xE9ditos.unity"
+  nomeDaCena: "Cr\xE9ditos"
 --- !u!1 &1994891524
 GameObject:
   m_ObjectHideFlags: 0
