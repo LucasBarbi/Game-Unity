@@ -12,6 +12,7 @@ public class personagemMov : MonoBehaviour
     private bool estaNoChao, restartPlayer, restartcheck1, restartcheck2;
     public Transform posicaoDoPe;
     public LayerMask chao;
+    //public float cronometro;
 
     private bool olhandoDireita = true;
     public Animator animator;
@@ -21,6 +22,8 @@ public class personagemMov : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         posi_inicial = GameObject.Find("posi_inicial");
         CP1 = GameObject.Find("CP1");
         CP2 = GameObject.Find("CP2");
@@ -30,6 +33,7 @@ public class personagemMov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //cronometro += Time.deltaTime;
         estaNoChao = Physics2D.OverlapCircle(posicaoDoPe.position, 0.3f, chao);
         animator.SetBool("EstaNoChao", estaNoChao);
         animator.SetFloat("velocidadeY", corpoPersonagem.velocity.y);

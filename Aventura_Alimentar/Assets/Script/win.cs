@@ -68,7 +68,7 @@ public class win : MonoBehaviour
 
         if (col.CompareTag("bacon") == true)
         {
-            score = score - 25;
+            score = score - 15;
             Destroy(col.gameObject);
         }
 

@@ -7,7 +7,6 @@ public class placas : MonoBehaviour
 {
     public GameObject placa;
 
-
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Placa") == true)
@@ -16,7 +15,6 @@ public class placas : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        
     }
 
     public void ResumeGame()
@@ -37,6 +35,5 @@ public class placas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
